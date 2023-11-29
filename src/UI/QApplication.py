@@ -18,7 +18,7 @@ class Application(QApplication):
     def __init__(self, sys_argv):
         super(Application, self).__init__(sys_argv)
 
-        info = Main.getInstance().getInfos()
+        info = Main.getInstance().get_infos()
         self.setApplicationName(info["name"] + " v" + info["version"])
         self.setApplicationDisplayName(info["display_name"])
         self.setApplicationVersion(info["version"])
